@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    @apply bg-zinc-900 text-zinc-50 font-fredoka
+}
+
+/* navbar */
+.menu-btn{
+    @apply bg-zinc-50/10 rounded-xl backdrop-blur-2xl
+    hover:bg-zinc-50/15 active:scale-95
+}
+
+.blur-bar{
+  @apply isolate aspect-video w-96 rounded-xl bg-zinc-50/10 shadow-lg ring-1 ring-zinc-50/5 backdrop-blur-lg
+
+}
+
+/* navitems */
+.navitems{
+    @apply bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-50/5 scale-90 isolate  blur-3xl opacity-0 transition-[opacity,transform,filter]  invisible justify-center flex gap-20 md:gap-12 p-3
+    max-md:absolute max-md:flex-col max-md:gap-4 max-md:w-full max-md:right-0 lg:px-20 md:text-xl
+}
+
+.navitems.active{
+    @apply opacity-100 scale-100 blur-0 visible  
+}
+
+
+/* navlink */
+.nav-link{
+    @apply flex justify-center tracking-wide hover:text-zinc-500 hover:text-xl 
+}
+
+.nav-link.active{
+    @apply text-red-400 duration-500
+}
+
+/* skills */
+
+/* scroller */
+
+
+.marquee-row{
+@apply flex flex-shrink-0 gap-12 whitespace-nowrap 
+}
+
+.marquee-group{
+    @apply flex w-11/12 mx-auto overflow-hidden gap-12 p-2
+}
