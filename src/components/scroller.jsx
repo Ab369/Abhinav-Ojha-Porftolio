@@ -5,7 +5,7 @@ function Scroller(){
 
     return(
         <>
-        <div className="inf-scroll flex flex-col gap-2 max-lg:px-4 max-sm:hidden">
+        <div className="inf-scroll md:flex flex-col gap-2 max-lg:px-4 hidden">
         <div className="marquee-group">
              <div className="marquee-row animate-scroller1 ">
                {

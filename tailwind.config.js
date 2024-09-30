@@ -6,8 +6,11 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
+  theme: {  
     extend: {
+      screens:{
+        'md':'800px'
+    },
       fontFamily: {
         "fredoka": ['Fredoka', 'sans-serif'],
          'oswald':["Oswald", 'sans-serif']

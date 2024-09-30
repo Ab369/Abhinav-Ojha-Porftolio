@@ -34,7 +34,7 @@ function Navbar()
     <>
       <div className="header fixed top-0 left-0 w-full h-20 z-10">
 
-        <div className={"md:h-20 absolute top-4 lg:w-11/12 md:w-full left-0 right-0 mx-auto h-14"+(navBlur==1?' blur-bar':'')}></div>
+        <div className={"md:h-20 absolute top-4 lg:w-11/12 md:w-full left-0 right-0 mx-auto h-14 max-md:hidden"+(navBlur==1?' blur-bar':'')}></div>
 
         <div className="navbar max-w-screen-2xl w-full h-20 flex justify-between items-center mx-auto md:mt-4 px-4 md:px-6 gap-3 ">
             <h1 className="lg:text-3xl md:text-2xl z-10">

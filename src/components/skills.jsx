@@ -6,7 +6,7 @@ function Skills(){
         {
             title:'CSS',
             description:'Styling',
-            logo:'src/assets/css-3.png'
+            logo:'./assets/css-3.png'
         },
         {
             title:'JavaScript',
