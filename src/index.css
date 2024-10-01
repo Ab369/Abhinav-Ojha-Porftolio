@@ -7,7 +7,7 @@ html{
 }
 
 body{
-    @apply bg-zinc-900 text-zinc-50 font-fredoka
+    @apply bg-zinc-900 text-zinc-50 font-fredoka p-0 m-0
 }
 
 /* navbar */
@@ -53,3 +53,43 @@ body{
 .marquee-group{
     @apply flex w-11/12 mx-auto overflow-hidden gap-12 p-2
 }
+
+.glow-btn{
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    @apply relative
+}
+.glow-btn:hover {
+    text-decoration: none;
+    animation: animate 8s linear infinite;
+  }
+  
+  .glow-btn:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 999px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .glow-btn:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }

@@ -7,10 +7,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {  
+    
     extend: {
       screens:{
-        'md':'800px'
-    },
+        'lg2':'1570px',
+        'lg3':'1260px',
+        'md2':'370px'
+      },
+      
+
       fontFamily: {
         "fredoka": ['Fredoka', 'sans-serif'],
          'oswald':["Oswald", 'sans-serif']

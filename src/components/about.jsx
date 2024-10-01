@@ -21,11 +21,11 @@ function About(){
                 {textContent}
             </div>
             <div className="about-buttons flex md:text-xl gap-5 ">
-                <button className="flex gap-2 items-center md:p-2 p-1 border-zinc-300 border-2 hover:bg-zinc-300" onClick={()=>{
+                <button className="flex gap-2 items-center md:p-2 p-1 border-zinc-300 border-2 hover:bg-zinc-700" onClick={()=>{
                     window.location.href='https://github.com/Ab369'
                 }}>Github <span><img src="src\assets\github.png" className="md:w-8 w-6"/></span></button>
 
-                <button className="p-2 border-zinc-300 border-2 hover:bg-zinc-300" onClick={()=>{
+                <button className="p-2 border-zinc-300 border-2 hover:bg-zinc-700" onClick={()=>{
                     getQuote();
                 }}>Get Inspired!</button>
             </div>
