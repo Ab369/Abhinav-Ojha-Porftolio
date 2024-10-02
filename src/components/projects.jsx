@@ -25,14 +25,6 @@ function Projects(){
           live:'https://coursemaster-admin.vercel.app/'
         },
         {
-          title:'PerfPredict',
-          description:'Employee performance prediction',
-          tags:['ML','Flask'],
-          image:epp,
-          repo: 'https://github.com/Ab369/Employee-Performance-Prediction', 
-          live:'https://github.com/Ab369/Employee-Performance-Prediction'
-        },
-        {
           title:'Texmoji',
           description:'Encrypts text to emoji',
           tags:['javascript','unicode'],
@@ -55,6 +47,14 @@ function Projects(){
           image:sg,
           repo:'https://github.com/Ab369/SimonGame-js-3',
           live:'https://simon-game-js-3.vercel.app/'
+        },
+        {
+          title:'PerfPredict',
+          description:'Employee performance prediction',
+          tags:['ML','Flask'],
+          image:epp,
+          repo: 'https://github.com/Ab369/Employee-Performance-Prediction', 
+          live:'https://github.com/Ab369/Employee-Performance-Prediction'
         },
         {
           title:'DrumKit',
