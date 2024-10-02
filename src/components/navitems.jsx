@@ -19,14 +19,14 @@ const Navitems=({navOpen})=>
             ref:null
         },
         {
-            label:'Projects',
-            link:'#project',
+            label:'Skills',
+            link:'#skill',
             className:'nav-link',
             ref:null
         },
         {
-            label:'Skills',
-            link:'#skill',
+            label:'Projects',
+            link:'#project',
             className:'nav-link',
             ref:null
         },

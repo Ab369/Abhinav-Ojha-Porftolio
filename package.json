@@ -11,6 +11,8 @@
     "proxy": "https://theysaidso.p.rapidapi.com"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "emailjs": "^4.0.3",
     "framer-motion": "^11.8.0",
     "gsap": "^3.12.5",
     "prop-types": "^15.8.1",

@@ -51,7 +51,7 @@ function Navbar()
                 <Navitems navOpen={navOpen}/>
             </div>
 
-            <a className="justify-self-center max-md:hidden z-10 glow-btn lg:px-5 lg:py-3 md:p-2 md:text-xl rounded-xl text-black font-semibold" href="">Contact</a>  
+            <a className="justify-self-center max-md:hidden z-10 glow-btn lg:px-5 lg:py-3 md:p-2 md:text-xl rounded-xl text-black font-semibold" href="#contact">Contact</a>  
       
         </div>
       </div>

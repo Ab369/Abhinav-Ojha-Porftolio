@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react"
 import React, { useRef } from "react";
+import cm from '../assets/projects/coursemaster.png'
+import dk from '../assets/projects/dk.png'
+import epp from '../assets/projects/epp.png'
+import sg from '../assets/projects/sg.png'
+import ss from '../assets/projects/ss.png'
+import tte from '../assets/projects/tte.png'
+
 import {
   motion,
   useMotionTemplate,
@@ -7,44 +14,55 @@ import {
   useSpring,
 } from "framer-motion";
 
-
 function Projects(){
     const Projects=[
         {
-          title:'Web devlopment1',
-          description:'A web dev project',
-          tags:['tag1','tag2','tag3'],
-          image:'src/assets/camera.jpg'
+          title:'COURSEMASTER',
+          description:'MERN stack course site',
+          tags:['mern','api','recoil'],
+          image:cm,
+          repo:'https://github.com/Ab369/CourseMaster' , 
+          live:'https://coursemaster-admin.vercel.app/'
         },
         {
-          title:'Web devlopment2',
-          description:'A web dev project',
-          tags:['tag1','tag2','tag3'],
-          image:'src/assets/camera.jpg'
+          title:'PERFROMANCE PREDICTOR',
+          description:'Employee performance prediction',
+          tags:['ML','Flask'],
+          image:epp,
+          repo: 'https://github.com/Ab369/Employee-Performance-Prediction', 
+          live:'https://github.com/Ab369/Employee-Performance-Prediction'
         },
         {
-          title:'Web devlopment3',
-          description:'A web dev project',
-          tags:['tag1','tag2','tag3'],
-          image:'src/assets/camera.jpg'
+          title:'TEXT TO EMOJI',
+          description:'Encrypts text to emoji',
+          tags:['javascript','unicode'],
+          image:tte,
+          repo: 'https://github.com/Ab369/TextToEmojiConverter', 
+          live:'https://text-to-emoji-converter.vercel.app/'
         },
         {
-          title:'Web devlopment4',
-          description:'A web dev project',
-          tags:['tag1','tag2','tag3'],
-          image:'src/assets/camera.jpg'
+          title:'SONG SURFER',
+          description:'Plays locally saved song',
+          tags:['javascript','audio'],
+          image:ss,
+          repo: 'https://github.com/Ab369/Song-Surfer-audio-player-', 
+          live:'https://song-surfer-audio-player.vercel.app/'
         },
         {
-          title:'Web devlopment5',
-          description:'A web dev project',
-          tags:['tag1','tag2','tag3'],
-          image:'src/assets/camera.jpg'
+          title:'SIMON GAME',
+          description:'A memory game',
+          tags:['Javascript','algorithm'],
+          image:sg,
+          repo:'https://github.com/Ab369/SimonGame-js-3',
+          live:'https://simon-game-js-3.vercel.app/'
         },
         {
-          title:'Web devlopment6',
-          description:'A web dev project',
-          tags:['tag1','tag2','tag3'],
-          image:'src/assets/camera.jpg'
+          title:'DRUM KIT',
+          description:'Play the drums',
+          tags:['DOM','audio','events'],
+          image:dk,
+          repo:'https://github.com/Ab369/Drum-kit-js-2' , 
+          live:'https://drum-kit-js-2.vercel.app/'
         },
     ]
 
@@ -64,7 +82,7 @@ function Projects(){
 
 
   return (
-    <div className="lg:mx-16 md:mx-6 mx-5 mt-28 flex flex-col lg:gap-20 md:gap-12 gap-8">
+    <div id="project" className="lg:mx-16 md:mx-6 mx-5 mt-28 flex flex-col lg:gap-20 md:gap-12 gap-8">
         <p className="md:text-4xl text-xl w-fit border-b-2 border-zinc-400 animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent font-semibold">Projects built by me</p>
     <div className="grid lg:grid-cols-3 lg:gap-20  md:grid-cols-2 gap-6">
       {
@@ -131,7 +149,7 @@ const TiltCard = ({project}) => {
         transformStyle: "preserve-3d",
         transform,
       }}
-      className="relative lg:w-96 rounded-xl  "
+      className="relative lg:w-96  rounded-xl  "
     >
       <div
         style={{
@@ -147,7 +165,7 @@ const TiltCard = ({project}) => {
         >
 
       <div className="border-2 border-zinc-500 flex flex-col px-4 py-10 gap-10 bg-zinc-800 rounded-xl">
-           <div className="img w-full">
+           <div className="img w-full lg:h-52 md:h-32 h-40">
             <img src={project.image} alt="project-image" className="object-contain rounded-xl"/>
         </div>
 
@@ -167,9 +185,12 @@ const TiltCard = ({project}) => {
             </div>
 
             <div className="right flex flex-col gap-2 items-end lg:text-xl md:text-md text-sm">
-                <button className="flex items-center gap-1 bg-zinc-300 text-black lg:px-2 lg:py-1 px-1 rounded-xl hover:scale-110">Repo<span className="material-symbols-outlined">north_east</span>
+                <button onClick={()=>{window.open(project.repo, '_blank', 'noopener, noreferrer')
+}} className="flex items-center gap-1 bg-zinc-300 text-black lg:px-2 lg:py-1 px-1 rounded-xl hover:scale-110">Repo<span className="material-symbols-outlined">north_east</span>
                 </button>
-                <button className="flex items-center gap-2 bg-red-300 text-black lg:px-2 lg:py-1 px-1 rounded-xl hover:scale-110">Visit<span className="material-symbols-outlined ">north_east</span>
+
+                <button onClick={()=>{window.open(project.live, '_blank', 'noopener, noreferrer')
+}}className="flex items-center gap-2 bg-red-300 text-black lg:px-2 lg:py-1 px-1 rounded-xl hover:scale-110">Visit<span className="material-symbols-outlined ">north_east</span>
                 </button>
             </div>
         </div>
