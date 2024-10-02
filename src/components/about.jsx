@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import github from '../assets/github.png'
+import about from '../assets/about.txt'
+
 function About(){
 
     const[textContent,setTextContent]=useState();
     
     useEffect(()=>{
-     fetch('src/assets/about.txt').then((res)=>res.text()
+     fetch(about).then((res)=>res.text()
      .then((text)=>setTextContent(text))).catch((err)=>setTextContent('err fetching text'));
     },[])
 
