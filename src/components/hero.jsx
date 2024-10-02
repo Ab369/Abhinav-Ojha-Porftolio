@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import resume from '../assets/Abhinav_Ojha_Software_engineering_resume.pdf'
+import resume from '../assets/Abhinav_Ojha_Software_Engineering_resume.pdf'
 import pi from '../assets/ab.png'
 function Hero(){
     const[scrollClass,setScrollClass]=useState(' lg:flex');
