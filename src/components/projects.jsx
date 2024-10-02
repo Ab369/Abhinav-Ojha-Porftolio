@@ -17,7 +17,7 @@ import {
 function Projects(){
     const Projects=[
         {
-          title:'COURSEMASTER',
+          title:'CourseMaster',
           description:'MERN stack course site',
           tags:['mern','api','recoil'],
           image:cm,
@@ -25,7 +25,7 @@ function Projects(){
           live:'https://coursemaster-admin.vercel.app/'
         },
         {
-          title:'PERFROMANCE PREDICTOR',
+          title:'PerfPredict',
           description:'Employee performance prediction',
           tags:['ML','Flask'],
           image:epp,
@@ -33,7 +33,7 @@ function Projects(){
           live:'https://github.com/Ab369/Employee-Performance-Prediction'
         },
         {
-          title:'TEXT TO EMOJI',
+          title:'Texmoji',
           description:'Encrypts text to emoji',
           tags:['javascript','unicode'],
           image:tte,
@@ -41,7 +41,7 @@ function Projects(){
           live:'https://text-to-emoji-converter.vercel.app/'
         },
         {
-          title:'SONG SURFER',
+          title:'SongSurfer',
           description:'Plays locally saved song',
           tags:['javascript','audio'],
           image:ss,
@@ -49,7 +49,7 @@ function Projects(){
           live:'https://song-surfer-audio-player.vercel.app/'
         },
         {
-          title:'SIMON GAME',
+          title:'SimonGame',
           description:'A memory game',
           tags:['Javascript','algorithm'],
           image:sg,
@@ -57,7 +57,7 @@ function Projects(){
           live:'https://simon-game-js-3.vercel.app/'
         },
         {
-          title:'DRUM KIT',
+          title:'DrumKit',
           description:'Play the drums',
           tags:['DOM','audio','events'],
           image:dk,
