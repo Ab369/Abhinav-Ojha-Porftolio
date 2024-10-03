@@ -47,9 +47,7 @@ function Footer(){
 
         <form ref={form} onSubmit={sendEmail} className="form flex flex-col gap-4 lg:text-xl">
 
-            <input type="text" name="user_name" placeholder="Enter Your Name" className="bg-zinc-600   placeholder-zinc-300 px-8 py-2 rounded-xl" />
-
-            <input type="email"  name="user_email" placeholder="Enter Your Email" className="bg-zinc-600   placeholder-zinc-300 px-8 py-2 rounded-xl" />
+            <input type="email"  name="user_name" placeholder="Enter Your Email" className="bg-zinc-600   placeholder-zinc-300 px-8 py-2 rounded-xl" />
 
             <textarea name="message"  placeholder="Write your message/queries" className="bg-zinc-600   placeholder-zinc-300 px-8 py-2 rounded-xl" />
 
