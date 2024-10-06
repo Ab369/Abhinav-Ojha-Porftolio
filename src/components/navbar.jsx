@@ -1,11 +1,8 @@
 
 import { useEffect, useState } from "react";
 import Navitems from "./navitems";
-function Navbar()
+function Navbar({navOpen,setNavOpen})
 {
-
-  //for opening/closing navbar 
-  const[navOpen,setNavOpen]=useState(true);
 
   
   
