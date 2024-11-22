@@ -6,6 +6,7 @@ import epp from '../assets/projects/epp.png'
 import sg from '../assets/projects/sg.png'
 import ss from '../assets/projects/ss.png'
 import tte from '../assets/projects/tte.png'
+import sv from '../assets/projects/sv.png'
 
 import {
   motion,
@@ -25,13 +26,23 @@ function Projects(){
           live:'https://coursemaster-admin.vercel.app/'
         },
         {
+          title:'Sorting Visualiser',
+          description:'Visualise sorting Algorithms',
+          tags:['javascript','ReactJS'],
+          image:sv,
+          repo: 'https://github.com/Ab369/SortingVisualiser', 
+          live:'https://sorting-visualiser-henna.vercel.app/'
+        },
+        {
           title:'Texmoji',
           description:'Encrypts text to emoji',
           tags:['javascript','unicode'],
           image:tte,
           repo: 'https://github.com/Ab369/TextToEmojiConverter', 
           live:'https://text-to-emoji-converter.vercel.app/'
+          
         },
+        
         {
           title:'SongSurfer',
           description:'Plays locally saved song',
@@ -103,8 +114,8 @@ function Projects(){
 
 
 //framer
-const ROTATION_RANGE = 32.5;
-const HALF_ROTATION_RANGE = 32.5 / 2;
+const ROTATION_RANGE = 15;
+const HALF_ROTATION_RANGE = 15 / 2;
 
 const TiltCard = ({project}) => {
   const ref = useRef(null);

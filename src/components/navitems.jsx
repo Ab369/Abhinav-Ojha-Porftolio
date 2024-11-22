@@ -62,7 +62,9 @@ const Navitems=({navOpen})=>
 function ItemComp({item,activeCurrentLink})
 {
   return(
-     <a href={item.link} className={item.className} ref={item.ref} onClick={activeCurrentLink}>{item.label}</a>
+     <a href={item.link} className={item.className} ref={item.ref} onClick={()=>{
+        alert('ok')
+     }}>{item.label}</a>
   )
 }
 
