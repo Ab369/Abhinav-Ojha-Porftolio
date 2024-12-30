@@ -24,17 +24,11 @@ return(
             <p className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent md:text-5xl text-2xl font-black md:leading-snug">Programmer with a keen interest in developing dynamic web applications.</p>
             </span>
             <button onClick={() => {
-        const pdfUrl = resume;
-        const link = document.createElement("a");
-        link.href = pdfUrl;
-        link.download = "Abhinav_Ojha_Software_engineering_resume.pdf"; // specify the filename
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+         window.open('https://drive.google.com/file/d/1g1CEU_1R2Teu5qUg8rLS2Fug8bJO5lUK/view?usp=sharing')
     }} 
 
-    className="bg-red-300 text-black flex justify-center md:p-3 md:text-xl rounded-xl p-2 active:scale-95 hover:bg-zinc-400">Download Resume
-            <span class="material-symbols-outlined">download</span>
+    className="bg-red-300 text-black flex justify-center md:p-3 md:text-xl rounded-xl p-2 active:scale-95 hover:bg-zinc-400">Resume
+            <span class="material-symbols-outlined">north_east</span>
             </button>
         </div>
 
